@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+html {
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+  background: #16161A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  height: 136px;
+  width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.header-logo {
+  width: 196px;
+  height: 44px;
+}
+
+.header-symbol {
+  width: 520px;
+  height: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+  width: 610px;
+  height: 56px;
+}
+
+.nav-p {
+  color: white;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.blue-button {
+  border: none;
+  font-family: 'Cinzel';
+  text-align: center;
+  justify-content: center;
+  width: 176px;
+  height: 56px;
+  background: #5091d2;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #16161A;
+}
+
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 885px;
+  width: 1920px;
+}
+
+.main_info {
+  width: 1518px;
+  height: 587px;
+  position: absolute;
+  left: 202px;
+  top: 118px;
+}
+
+.main_info_row1 {
+  position: absolute;
+  width: 878px;
+  height: 270px;
+  left: 0px;
+  top: 0px;
+}
+
+.main_info_row2 {
+  position: absolute;
+  width: 496px;
+  height: 279px;
+  left: 1022px;
+  top: 308px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_info__video {
+  position: absolute;
+  width: 496px;
+  height: 279px;
+  left: 0px;
+  top: 0px;
+}
+
+.main_h1 {
+  color: white;
+  line-height: 90%;
+  font-family: 'Cinzel';
+  font-weight: 700;
+  font-size: 51px;
+}
+
+.main_description {
+  color: rgb(181, 181, 181);
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Inter';
+}
+
+.row1_1 {
+  width: 878px;
+  height: 116px;
+}
+
+.row1_2 {
+  width: 618px;
+  height: 58px;
+}
+
+.row1_buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  width: 332px;
+  margin-top: 20px;
+  height: 56px;
+}
+
+.none-button {
+  font-family: 'Cinzel';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 140px;
+  height: 56px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 21px;
+  color: white;
+  background: none;
+}
+
+.bgimg {
+  background: url(images/fundo.png);
+  mix-blend-mode: luminosity;
+  position: relative;
+  width: 1920px;
+  height: 1093px;
+  left: 0px;
+  top: -1130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main_blur {
+  position: relative;
+  width: 1921px;
+  height: 156px;
+  left: 0px;
+  top: -1230px;
+  background: #16161A;
+  filter: blur(40px);
+}
+
+.main_characters {
+  background: url(images/herois-header.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  width: 1150px;
+  height: 849px;
+  left: 380px;
+  top: -2090px;
+}
+
+.play_circle {
+  position: absolute;
+}
