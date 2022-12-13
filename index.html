@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Website</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
         </svg>
     </div>
     <nav class="nav">
-      <p class="nav-p">Videos</p>
-      <p class="nav-p">Community</p>
-      <p class="nav-p">Contact</p>
+      <a href="#">Videos</a>
+      <a href="#">Commutiny</a>
+      <a href="#">Contact</a>
       <!-- I should have made links instead of buttons -->
       <button class="nav__button blue-button blue__button_active">Buy Now</button>
     </nav>
@@ -52,4 +53,18 @@
   <div class="main_blur"></div>
   <div class="main_characters"></div>
 </body>
+<script>
+  ScrollReveal({
+  reset: false,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
+});
+
+ScrollReveal().reveal('.main_h1', {distance: '4px', delay: 100, origin: 'top' });
+ScrollReveal().reveal('.main_description', {distance: '4px', delay: 400, origin: 'top' });
+ScrollReveal().reveal('.main_characters', {distance: '1px', delay: 200, origin: 'right' });
+ScrollReveal().reveal('.main_info_row2', {distance: '44px', delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.header', {distance: '14px', delay: 100, origin: 'top' });
+</script>
 </html>

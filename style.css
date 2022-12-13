@@ -69,7 +69,9 @@ img {
   height: 56px;
 }
 
-.nav-p {
+nav>a {
+  transition: all .4s ease;
+  text-decoration: none;
   color: white;
   font-family: 'Cinzel';
   font-style: normal;
@@ -79,6 +81,8 @@ img {
 }
 
 .blue-button {
+  transition: all .4s ease;
+  cursor: pointer;
   border: none;
   font-family: 'Cinzel';
   text-align: center;
@@ -90,6 +94,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   color: #16161A;
+  animation: blue-button_opacity 5s 1;
 }
 
 .main {
@@ -138,6 +143,7 @@ img {
 }
 
 .main_h1 {
+  cursor: default;
   color: white;
   line-height: 90%;
   font-family: 'Cinzel';
@@ -146,6 +152,7 @@ img {
 }
 
 .main_description {
+  cursor: default;
   color: rgb(181, 181, 181);
   line-height: 160%;
   font-weight: 400;
@@ -174,6 +181,8 @@ img {
 }
 
 .none-button {
+  transition: all .4s ease;
+  cursor: pointer;
   font-family: 'Cinzel';
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -188,12 +197,14 @@ img {
   padding: 0px 21px;
   color: white;
   background: none;
+  animation: none-button_opacity 8s 1;
 }
 
 .bgimg {
   background: url(images/fundo.png);
   mix-blend-mode: luminosity;
   position: relative;
+  z-index: -1;
   width: 1920px;
   height: 1093px;
   left: 0px;
@@ -225,4 +236,46 @@ img {
 
 .play_circle {
   position: absolute;
+}
+
+nav>a:hover {
+  box-shadow:  0px 4px 0px 0px #5091d2;
+}
+
+@keyframes blue-button_opacity {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes none-button_opacity {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.blue-button:hover {
+  transition: all .4s ease;
+  background: #53bacd;
+  box-shadow: 0px 0px 22px 2px rgba(255, 255, 255, 0.2);
+}
+
+.none-button:hover {
+  border:1px solid #FFFFFF;
+}
+
+.play_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: wait;
 }
